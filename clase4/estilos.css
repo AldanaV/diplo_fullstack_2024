@@ -1,0 +1,18 @@
+.caja{
+    background-color: aqua;
+    width: 250px;
+    height: 144px;
+    overflow: hidden;
+
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    border-top: dashed 2px black;
+    border-bottom: dashed 2px black;
+    border-left: dashed 2px black;
+    border-right: dashed 2px black;
+
+    display: block;
+}
