@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav>
+            <ul class="menuSuperior">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="">Nostros</a></li>
+                <li id="ir-abajo">Ir abajo</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <ul class="ejemplo">
+            <li><a href="index.html">ejemplo1</a></li>
+            <li><a href="personajes.html">ejemplo2</a></li>
+            <li><a href="contacto.html">ejemplo3</a></li>
+        </ul>
+    </div>
+
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="" method="post" class="formulario">
+            <fieldset class="fieldset">
+                <legend class="legend">Información del contacto</legend>
+                <!-- action es el archivo al que se manda la info y el method es la forma en la que se envia esa información, el "get" es para cuando la información no es sensible, viaja por la url y "post" es para info sensible, es invisible.-->
+
+                <div class="form_group">
+                    <label for="nombre" class="label">Nombre</label>
+                    <input type="text" class="input" name="nombre" id="nombre" required> <!--requerido, sino no podes enviarlo-->
+                </div>
+
+                <div class="form_group">
+                    <label for="apellido" class="label">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="input">
+                </div>
+
+                <div class="form_group">
+                    <label for="clave" class="label">Contraseña</label>
+                    <input type="password" name="clave" id="clave" class="input">
+                </div>
+
+                <div class="form_group">
+                    <label for="edad" class="label">Edad</label>
+                    <input type="number" name="edad" id="edad" min="18" max="100" class="input">
+                </div>
+
+                <div class="form_group">
+                    <label for="mensaje" class="label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" cols="20" minlength="10" maxlength="200"></textarea>
+                </div>
+
+                <div class="form_group">
+                    <label for="sitioWeb" class="label">Sitio Web</label>
+                    <input type="url" class="input" name="sitioWeb" pattern="https?://.+" title="Por favor,ingrese una URL valida">
+                </div>
+    
+                <div class="form_group">
+                    <label for="pais" class="label">País</label>
+                    <select name="pais" id="">
+                        <option value="A">Argentina</option>
+                        <option value="C">Chile</option>
+                        <option value="B">Bolivia</option>
+                    </select>
+                </div>
+
+                <div class="form_group">
+                    <p for="colores">Selecciona tu color</p>
+
+                    <input type="radio" name="color" value="rojo">
+                    <label for="rojo">Rojo</label>
+                    <input type="radio" name="color" value="azul">
+                    <label for="azul">Azul</label>
+                    <input type="radio" name="color" value="amarillo">
+                    <label for="amarillo">Amarillo</label>
+                </div>
+
+
+                <div class="form_group">
+                    <label for="sauco">Sauco</label>
+                    <input type="checkbox">
+                    <label for="draco">Draco</label>
+                    <input type="checkbox">
+                    <label for="hermione">Hermione</label>
+                    <input type="checkbox">
+                </div>
+
+
+                <input type="submit" class="submit-enviar" value="Enviar Formulario">
+
+            </fieldset>
+        </form>
+
+        
+
+
+    </section>
+</body>
+
+</html>

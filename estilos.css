@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:lightpink; 
+    font-size: 15px;
+}
+
+h1{
+    margin: 20px;
+    
+}
+
+.menu{
+    list-style: none;
+    text-align: center;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.menu li{
+    display: inline;
+    padding: 2rem;
+    margin:10px;
+}
+
+li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#ir-abajo{
+    float: right;
+}
+
+
+/*Formulario*/
+
+.formulario{
+    width: 80%;
+    margin: 0 auto; /*el auto es para que quede centrado*/
+}
+
+.fieldset{
+    border: 1px solid black;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.legend{
+    font-weight: bold;
+}
+
+.form_group{
+    margin-bottom: 1.2rem;   
+}
+
+.label{
+    display: block;
+}
+
+.input, textarea, select{
+    width: 100%;
+}
+
+.submit-enviar{
+    padding: 1rem 2rem;
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+    cursor: pointer; /*para que nos aparezca la manito cuando apoyamos el cursor*/
+}
+
+.submit-enviar:hover{ /*cuando apoyamos el cursor, cambia de color*/
+    background-color: rgb(67, 236, 180);
+}
+
+.submit-enviar:focus{ /*cuando haces clic, cambia de color la letra*/
+    color: blue;
+}
+
+.ejemplo li a:hover{
+    color: red;
+}
+
+.ejemplo li a:active{
+    color: rgb(0, 255, 123);
+}
+
+.ejemplo li a:focus{
+    color: yellow;
+}
+
+.ejemplo li a:visited{
+    color: rgb(255, 0, 179);
+}
+
+
+/*Nosotros*/
+
+.gradientes{
+    height: 20vh;
+   /* background-color: aquamarine;*             pagina para ver los colores  https://cssgradient.io/ */
+    background-image: linear-gradient( to left, red, violet);
+}
+
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+/*
+.box_ejemplo{
+    height: 150px;
+    width: 150px;
+    transform: skewY(25deg)
+}
+*/
+.ejemplo div{
+    width: 100px;
+    height: 100px;
+    /*transition: height 2s, width 1s;*/
+    transition: all 2s; /*para que gradualmente agarre el color cyan y no de golpe*/
+    border: solid 1px;
+
+}
+
+.ejemplo div:hover{
+    /*height: 200px;
+    width: 200px;*/
+    padding: 2rem;
+    background-color: cyan;
+    transform: skewY(25deg);
+}
+
+.ejemplo2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.input{
+    height: 100px;
+    width: 100px;
+    transition: all 2s;
+}
+
+.input:focus{
+    width: 200px;
+    font-size: 24px;
+}
+
+.ejemplo3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(202, 66, 202);
+    animation-name: fulanito;
+    animation-duration: 2s;
+    animation-timing-function: ease; /**/
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+@keyframes fulanito{
+    0%{width: 100px;}
+    25%{width: 300px;}
+    50%{width: 200px;
+    background-color:red;}
+    75%{width: 300px;}
+    100%{width: 100px;
+    background-color:green;}
+}
+
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.titulo{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
